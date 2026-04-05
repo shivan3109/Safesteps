@@ -1,0 +1,17 @@
+/* Tailwind CSS directives - these are processed by PostCSS and are valid */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900;
+}
+
+button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
