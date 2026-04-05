@@ -183,7 +183,6 @@ export default function RunTracker() {
       hazard_type: newHazard.type,
       note: newHazard.note,
       reported_at: newHazard.reported_at,
-      activity_timestamp: new Date().toISOString(),
     });
 
     if (error) {

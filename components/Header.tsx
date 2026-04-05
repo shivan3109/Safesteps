@@ -16,6 +16,9 @@ export default function Header({ title }: HeaderProps) {
           <Link href="/dashboard" className="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">
             Dashboard
           </Link>
+          <Link href="/safe-route" className="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">
+            Safe Route
+          </Link>
           <Link href="/run" className="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">
             Run
           </Link>
