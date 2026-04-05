@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { useState } from "react";
 import { ActivityPoint } from "@/types";
 
@@ -10,7 +11,9 @@ type HazardFormProps = {
 };
 
 export default function HazardForm({ draftLocation, onSubmit, onCancel }: HazardFormProps) {
+  // eslint-disable-next-line no-unused-vars
   const [hazardType, setHazardType] = useState("Poor Lighting");
+  // eslint-disable-next-line no-unused-vars
   const [hazardComment, setHazardComment] = useState("");
   const [saving, setSaving] = useState(false);
 

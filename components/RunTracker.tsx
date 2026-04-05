@@ -1,5 +1,7 @@
 "use client";
 
+/// <reference lib="dom" />
+import React from "react";
 import { useMemo, useEffect, useState } from "react";
 import { GoogleMap, Marker, Polyline, useJsApiLoader } from "@react-google-maps/api";
 import { supabase } from "@/lib/supabase";
@@ -58,6 +60,7 @@ export default function RunTracker() {
     supply();
   }, [router]);
 
+  // eslint-disable-next-line no-undef
   const updateLocation = (position: GeolocationPosition) => {
     const next = { lat: position.coords.latitude, lng: position.coords.longitude };
     setCurrentPosition(next);
@@ -141,6 +144,7 @@ export default function RunTracker() {
     setSaving(false);
   };
 
+  // eslint-disable-next-line no-undef
   const onMapClick = (e: google.maps.MapMouseEvent) => {
     if (!e.latLng) return;
     setHazardDraft({

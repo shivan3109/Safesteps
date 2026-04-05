@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { supabase } from "@/lib/supabase";
@@ -70,7 +71,7 @@ export default function LoginPage() {
           {error && <p className="text-sm text-red-600">{error}</p>}
         </form>
         <p className="mt-4 text-center text-sm text-slate-600">
-          Don't have an account?{" "}
+          Don&apos;t have an account?{" "}
           <Link href="/signup" className="font-semibold text-sky-700 hover:underline">
             Signup
           </Link>
